@@ -1,0 +1,130 @@
+body{
+    grid-template-rows: 4rem 10px 1fr 10px 15rem;
+}
+
+header .profile-img, header .section-one{
+    display: none;
+}
+
+#nav-box:checked ~ nav{
+    border: .2rem solid black;
+}
+
+@media (min-width: 700px){
+    body{
+        grid-template-rows: 7rem 10px 1fr 10px 15rem;
+    }
+    header nav a{
+        margin-top: -9rem;
+    }
+
+    header a:hover{
+        margin-top: 2rem;
+    }
+
+    header nav{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+header .profile-img{
+    height: 5.5rem;
+    width: 7rem;
+}
+
+main{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display:flex;
+    flex-direction: column;
+}
+
+main section{
+    min-width: 20rem;
+}
+
+main .sub-service{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #85BF31;
+    margin-top: 0;
+}
+
+main .sub-service h1{
+    font-size: 2.5rem;
+}
+
+main .testimonies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 20rem;
+}
+
+main section article{
+    background-color: rgb(218, 217, 216);
+    border-radius: 3rem;
+    width: 17rem;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+main section article img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+main section article p{
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+main section article .quote{
+    letter-spacing: .05rem;
+    font-size: 1.25rem;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+main section article .name{
+    font-weight: bolder;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+main section article .occupation{
+    font-weight: 100;
+    color: rgb(75, 74, 74);
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+@media (min-width: 700px){
+    header nav a{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    main .testimonies{
+        display: flex;
+        flex-direction: column;
+    }
+    main .testimonies article{
+        width: 50%;
+    }
+}

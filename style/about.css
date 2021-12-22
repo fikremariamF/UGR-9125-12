@@ -1,0 +1,168 @@
+header{
+    background-image: none;
+    background-color: transparent;
+    color: black;
+}
+
+main h1{
+    font-size: 2rem;
+}
+
+header section h2{
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+main section ul
+{
+    margin-left: 3rem;
+    list-style-type: square;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 700px){
+    header nav a{
+        margin-top: -9rem;
+    }
+
+    header a:hover{
+        margin-top: -9rem;
+    }
+}
+
+main{
+    grid-row-start: 3;
+    grid-row-end: 4 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me p{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.more{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: .2rem solid black;
+    width: 90%;
+}
+
+.more input{
+    display: none;
+}
+
+.more label{
+    order: 1;
+    width: 10rem;
+    background-color: #85BF31;
+    border: .2rem solid black;
+    padding-left: 2rem;
+}
+
+.more section img{
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container p{
+    max-width: 20rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.more label{
+    display: none;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 973px){
+    main .more{
+        width:35rem;
+        width: auto;
+    }
+    main .container{
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container .catagory{
+        width: 30rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media (min-width:700px){
+    main{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .more{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .catagory{
+        margin: 1rem;
+        border: 3px solid black;
+    }
+}
+
+@media (min-width: 1300px){
+    .more label{
+        display: block;
+    }
+
+    .more label:hover{
+        background-color: #699627;
+        font-size: 1.6rem;
+        margin-bottom: .95rem;
+    }
+
+    .more .container p, .more .container hr{
+        display: none;
+    }
+
+    .more input:checked ~ .container p, .more input:checked ~ .container hr{
+        display: block;
+    }
+}
+
+button{
+    width: 15rem;
+    font-size: 2rem;
+    background-color: #85BF31;
+    padding: .5rem 1rem;
+    margin-left: 3rem;
+}
+button:hover{
+    background-color: #699627;
+}

@@ -1,0 +1,381 @@
+:root{
+    font-size: 10px;
+}
+
+html{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+.current{
+    background-color: whitesmoke;
+    font-weight: 500;
+}
+
+li.current{
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: auto;
+}
+
+a:active{
+        background-image: #615f5f;
+}
+   
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+nav ul a{
+    color: black;
+}
+
+body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 20rem 10px 1fr 10px 21rem;
+}
+
+header{
+    color: white;
+    background-image: linear-gradient(#333,#5F5F5F);;
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+header label{
+    margin-right: 10px;
+    margin-left: auto;
+    z-index: 1000;
+}
+
+header label img{
+    padding-top: 10px;
+    height: 3rem;
+    width: 2.3rem;
+}
+
+header h1, header h2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header input{
+    display: none;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    display:none;
+    background-color: transparent;
+}
+
+.profile-img{
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 16rem;
+    height: 13rem;
+    border-radius: 50% 50%;
+}
+
+header section{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header section h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+header section h2{
+    color: rgb(194, 194, 194);
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+header li a{
+    background-color: #85BF31;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 15rem;
+}
+nav hr{
+    border-color: #55831a;
+    width: 100%;
+}
+
+#nav-box:checked ~ nav{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: 16rem;
+    position: absolute;
+    background-color: #85BF31;
+    border: 1% solid black;
+    top: 5rem;
+    right: 0rem;
+}
+
+#nav-box:checked ~ nav li{
+    font-size: 1em;
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 15rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-box:checked ~ nav li a
+{
+    font-size: 1em;
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 15rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+footer{
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+footer .top{
+    display: flex;
+}
+footer a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    margin-left: 5em;
+}
+
+.ftsec1{
+    padding-top: 1em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-grow: 0;
+    border-right: 1px solid white;
+}
+.ftsec2{
+    width: 50%;
+    margin-top: -10px;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.last{
+    color: rgb(202, 201, 201);
+    order: -1;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    margin:10px 0 10px 0;
+    padding: 0;
+}
+footer li{
+    display: flex;
+    margin-bottom: 5px;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+}
+
+#submit{
+    position: relative;
+    left: 9rem;
+    align-self: flex-start;
+    margin-left: 2em;
+}
+
+#email{
+    width:15rem;
+    height: 1.5rem;
+}
+textarea{
+    width: 13.35rem;
+}
+footer a{
+    align-self: flex-start;
+}
+
+@media (min-width: 700px){
+    :root{
+        font-size: 12px;
+    }
+
+    body{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-rows: 15rem 10px 1fr 10px 15rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header label{
+        display: none;
+    }
+
+    .profile-img{
+        margin: 0;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 15rem;
+        height: 13rem;
+        border-radius: 50% 50%;
+        position: relative;
+    }
+
+    .section-one{
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    header h1, header h2{
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav{
+        display: flex;
+        position: static;
+        flex-direction: row;
+        margin-left: 3rem;
+        width: auto;
+    }
+
+
+    header nav ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction:row;
+        width: auto;
+    }
+
+    header nav li{
+        background-color: transparent;
+        font-size: 1.3em;
+        display: block;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    header nav a{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border: 1px solid black;
+        border-radius: .8em;
+        width: auto;
+        background-color: #85BF31;
+        padding: .2em .4em;
+        margin: .5em;
+        margin-top: 9rem;
+    }
+    
+    .current{
+        background-color: whitesmoke;
+    }
+    
+    header a:hover{
+        background-color: #699627;
+        font-size: 1.02em;
+        height: 1.75em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: .45em;
+        margin-top:9rem;
+    }
+    
+    .current:hover{
+        background-color: whitesmoke;
+    }
+
+    footer a:hover{
+        color: #85BF31;
+    }
+
+    #submit{
+        position: relative;
+        left: 10.5rem;
+        align-self: flex-start;
+        margin-left: 2em;
+    }
+
+}

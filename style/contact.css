@@ -1,0 +1,96 @@
+main{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+main section{
+    display: flex;
+    flex-direction: row;
+}
+
+main .img{
+    order: 2;
+}
+
+main .img img{
+    height:20rem;
+    width: 22rem;
+    border-radius: 2rem;
+}
+
+main section a img{
+    background-color: white;
+}
+main .social-media{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 46%;
+    border-right: .2rem solid black;
+    margin-right: 2rem;
+}
+
+main a{
+    text-decoration: none;
+    width: auto;
+    padding: 0;
+    color: black;
+    margin: 1rem 2rem;
+    display: flex;
+}
+
+main a.mail{
+    background-color: #85BF31;
+    color: black;
+    letter-spacing: .1rem;
+    font-size: 1.3rem;
+    padding: 0;
+    padding: .3rem 2rem;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    width: 8rem;
+}
+
+@media (max-width:439px){
+    main section{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    main .img{
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    main .img img{
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main a p{
+        display: none;
+    }
+
+    main .social-media{
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        border-right: none;
+        margin-right: none;
+    }
+
+    main a.mail{
+        align-self: center;
+        padding-bottom: .3rem;
+    }
+
+}
