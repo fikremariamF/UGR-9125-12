@@ -156,13 +156,14 @@ main{
     }
 }
 
-button{
-    width: 15rem;
+.download{
+    padding-left: 1rem;
+    width: 14rem;
     font-size: 2rem;
     background-color: #85BF31;
     padding: .5rem 1rem;
     margin-left: 3rem;
 }
-button:hover{
+.download:hover{
     background-color: #699627;
 }
